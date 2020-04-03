@@ -12,6 +12,7 @@ import CheckLists from '../../examples/check-lists'
 import EditableVoids from '../../examples/editable-voids'
 import Embeds from '../../examples/embeds'
 import ForcedLayout from '../../examples/forced-layout'
+import GRID from '../../examples/grid'
 import HoveringToolbar from '../../examples/hovering-toolbar'
 import HugeDocument from '../../examples/huge-document'
 import Images from '../../examples/images'
@@ -27,6 +28,7 @@ import SearchHighlighting from '../../examples/search-highlighting'
 import Tables from '../../examples/tables'
 
 const EXAMPLES = [
+  ['GRID', GRID, 'grid'],
   ['Checklists', CheckLists, 'check-lists'],
   ['Editable Voids', EditableVoids, 'editable-voids'],
   ['Embeds', Embeds, 'embeds'],
