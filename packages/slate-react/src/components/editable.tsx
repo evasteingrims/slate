@@ -151,7 +151,8 @@ export const Editable = (props: EditableProps) => {
     if (
       hasDomSelection &&
       newDomRange &&
-      isRangeEqual(domSelection.getRangeAt(0), newDomRange)
+      (isRangeEqual(domSelection.getRangeAt(0), newDomRange) ||
+        (selection && !Range.isCollapsed(selection)))
     ) {
       return
     }
