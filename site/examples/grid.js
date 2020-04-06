@@ -122,7 +122,7 @@ const GridElement = ({ attributes, children, element }) => {
         display: block;
         width: 100%;
         height: 400px;
-        background: red;
+        background: blue;
         box-shadow: ${selected && focused ? '0 0 0 3px #B4D5FF' : 'none'};
       `}
     >
