@@ -167,7 +167,12 @@ export const Editable = (props: EditableProps) => {
     if (newDomRange) {
       domSelection.addRange(newDomRange!)
       const leafEl = newDomRange.startContainer.parentElement!
-      if (selection && Range.isCollapsed(selection)) {
+      if (
+        selection &&
+        Range.isCollapsed(selection) &&
+        leafEl.hasAttribute('data-slate-zero-width') &&
+        leafEl.getAttribute('data-slate-zero-width') !== 'z'
+      ) {
         scrollIntoView(leafEl, { scrollMode: 'if-needed' })
       }
     }
