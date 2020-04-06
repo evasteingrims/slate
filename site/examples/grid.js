@@ -121,8 +121,8 @@ const GridElement = ({ attributes, children, element }) => {
       className={css`
         display: block;
         width: 100%;
-        height: 400px;
-        background: red;
+        height: 300px;
+        background: blue;
         box-shadow: ${selected && focused ? '0 0 0 3px #B4D5FF' : 'none'};
       `}
     >
