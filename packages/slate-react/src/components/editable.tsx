@@ -179,9 +179,7 @@ export const Editable = (props: EditableProps) => {
     // Otherwise the DOM selection is out of sync, so update it.
     const el = ReactEditor.toDOMNode(editor, editor)
     state.isUpdatingSelection = true
-    if (selection) {
-      domSelection.removeAllRanges()
-    }
+    domSelection.removeAllRanges()
 
     const newDomRange = selection && ReactEditor.toDOMRange(editor, selection)
 
